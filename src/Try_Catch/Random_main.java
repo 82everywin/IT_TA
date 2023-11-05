@@ -7,8 +7,8 @@ public class Random_main {
 		try {
 			StudyUtil.study();
 		} catch (SleepyException e) {
-			e.printStackTrace()
-			;
+			e.printStackTrace();
+		
 		}
 	}
 }
