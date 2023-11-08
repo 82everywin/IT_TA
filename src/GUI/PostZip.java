@@ -1,6 +1,7 @@
 package GUI;
 
 import java.net.HttpURLConnection;
+
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.ArrayList;
@@ -12,6 +13,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
 
 public class PostZip {
 	  //* 공공데이타포털(http://www.data.go.kr) 오픈 API 이용
@@ -29,7 +31,6 @@ public class PostZip {
     {
         HttpURLConnection con = null;
        
-        
         try
         {
         	List<String> v = new ArrayList<> ();
