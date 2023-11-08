@@ -14,7 +14,7 @@ public class MonthSchedule {
 		this.Month = Month;
 	}
 	
-	Day[] month = new Day[];
+	//Day[] month = new Day[];
 	
 	//할일 입력
 	public void input() {
@@ -35,10 +35,10 @@ public class MonthSchedule {
 		while (num ==1 || num == 2) {
 			System.out.print("날자(1일~30일)");
 			day = sc.nextInt();
-			month[day]= ;
+			//month[day]= ;
 			
 			System.out.print("할일 (입력:1, 보기:2, 끝내기:3) >> ");
-			int num = sc.nextInt();
+			num = sc.nextInt();
 		}
 		
 	}
