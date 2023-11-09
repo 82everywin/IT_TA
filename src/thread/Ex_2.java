@@ -12,9 +12,11 @@ public class Ex_2 {
 		try {
 		String str = sc.next();
 		System.out.println(Integer.parseInt(str));
+		/*
 		if(Integer.parseInt(str)) {
 			
 		}
+		*/
 		System.out.println(Integer.valueOf(str));
 		}catch(NumberFormatException e) {
 			e.printStackTrace();
