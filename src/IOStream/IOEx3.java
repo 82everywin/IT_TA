@@ -13,10 +13,12 @@ public class IOEx3 {
 				
 				int data;
 				while((data = fin1.read()) != -1) {
-//					System.out.print((char)data);
+					System.out.print((char)data);
 					fout1.write(data);
 				}
-				
+			
+				fin1.close();
+				fout1.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
