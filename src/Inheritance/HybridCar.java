@@ -1,3 +1,4 @@
+package Inheritance;
 
 public class HybridCar extends Car{
 

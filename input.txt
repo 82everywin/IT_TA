@@ -1,0 +1,4 @@
+안녕하세요! Hello, this is a sample sentence. 파일 입출력 예제를 테스트 중입니다. 
+Java로 작성된 코드로 파일에 내용을 씁니다. 
+이 문장은 파일에 저장되어 나중에 읽힐 것입니다. 
+감사합니다. Thank you for using this example!
