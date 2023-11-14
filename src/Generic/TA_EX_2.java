@@ -29,8 +29,7 @@ public class TA_EX_2 {
 			System.out.println("=============");
 			sc.nextLine();
 			
-			||
-			
+		
 			stu.put(name, grade);
 			
 		}
