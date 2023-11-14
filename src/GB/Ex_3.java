@@ -12,13 +12,11 @@ public class Ex_3 {
 		
 		if (lavor <=15) {
 			System.out.println(pay * lavor);
-		}
-		else if (lavor > 15) {
+		}	else if (lavor > 15) {
 			System.out.println("총 임금은 "+(int)((15 * pay) + (1.5 * pay * (lavor - 15)))+"원 입니다.");
 		}
 		
-		
-		
+	
 	}
 
 }

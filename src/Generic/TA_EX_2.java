@@ -29,6 +29,7 @@ public class TA_EX_2 {
 			System.out.println("=============");
 			sc.nextLine();
 			
+			||
 			
 			stu.put(name, grade);
 			
@@ -38,8 +39,7 @@ public class TA_EX_2 {
 		System.out.print("장학생 선발 학점 기준 입력 >> ");
 		double search = sc.nextDouble();
 		
-		Set<Entry<String, Double>> set =stu.entrySet();
-		System.out.print("장학생 명단 " );
+
 		
 		Set<String> key =stu.keySet();
 	      Iterator<String> it = key.iterator();
