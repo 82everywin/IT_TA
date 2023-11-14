@@ -1,6 +1,7 @@
 package thread;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class TA_Ex_1  {
 	
@@ -13,8 +14,8 @@ public class TA_Ex_1  {
 		
 		// 쓰레드 자신이 하던 작업을 잠시 멈추고 다른 쓰레드가 지정된 시간동안
 		// 작업을 수향하도록 할 때 join()을 사용한다.
-		//th1.join();
-		//th2.join();
+		th1.join();
+		th2.join();
 		
 		System.out.println("********* 학생 1 총합 : "+th1.sum+ "***********");
 		System.out.println("********* 학생 1 총합 : "+th2.sum+ "***********");
@@ -36,7 +37,6 @@ public class TA_Ex_1  {
 			e.printStackTrace();
 		}
 	}
-	
 	
 }
 
