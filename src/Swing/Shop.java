@@ -1,4 +1,4 @@
-package project;
+package Swing;
 
 
 import java.awt.event.ActionEvent;
@@ -8,18 +8,18 @@ import javax.swing.*;
 
 public class Shop {
 	
- Main_Frame f = null;
-	static Cart_Frame f2 = null;
-	static Favorite_Frame f3 = null;
-	
-	
-	
+	Main_Frame f = null;
+	Cart_Frame f2 = null;
+	Favorite_Frame f3 = null;
+
+
 	public static void main(String[] args) {
+		Shop shop = new Shop();
 		
 		try {
-			 Main_Frame f = new Main_Frame("메인 창");
-			f2 = new Cart_Frame("장바구니 창");
-			f3 = new Favorite_Frame("즐겨찾기 창");
+			shop.f = new Main_Frame(shop);
+			shop.f2 = new Cart_Frame(shop);
+			shop.f3 = new Favorite_Frame(shop);
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

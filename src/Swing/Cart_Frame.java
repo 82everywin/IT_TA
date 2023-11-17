@@ -1,4 +1,4 @@
-package project;
+package Swing;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -9,31 +9,22 @@ import javax.swing.*;
 
 public class Cart_Frame extends JFrame{
 	
-	//Shop shop;
-	
-	private String name; 
+	Shop shop=null;
 	
 	JPanel panel = new JPanel();
-	
-	ImageIcon img3 = new ImageIcon("./src/project/back.jpg");
-	JButton btn3 = new JButton();
+	JButton btn3 = new JButton(new ImageIcon("./cart.png"));
 	
 	
-	
-	public Cart_Frame(String name) {
-		this.name = name;
+	public Cart_Frame(Shop shop) {
+		this.shop = shop;
 		
-		setContentPane(panel);  // 기본 컨테이너 
-		
-		
-		
-		
+		setTitle("장바구니 창");
 		setLayout(null);
-		setLocation(200,200);
-		setSize(480,720);
+
+		setContentPane(panel);  // 기본 컨테이너 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		btn3.setLayout(null);
+		
 		btn3.setBounds(30, 30, 50, 40);
 		btn3.setBorderPainted(true);
 		panel.add(btn3);
@@ -44,18 +35,15 @@ public class Cart_Frame extends JFrame{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				panel.setVisible(false);
+				setVisible(false);
 				
 				System.out.println("메인으로 이동");
-				//shop.f.setVisible(true);
+				shop.f.setVisible(true);
 			}
 		});
 		
-		setLayout(null);
 		setLocation(200,200);
 		setSize(480,720);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
 
 	}
 	

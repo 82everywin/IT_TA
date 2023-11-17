@@ -1,4 +1,4 @@
-package project;
+package Swing;
 
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
@@ -11,35 +11,26 @@ import javax.swing.JPanel;
 
 public class Favorite_Frame extends JFrame{
 
-	Shop shop;
+	Shop shop =null;
 	
-	private String name;
+	JPanel panel = new JPanel();
 	
-	JPanel panel = new JPanel(new BorderLayout());
-	
-	ImageIcon img3 = new ImageIcon("./src/project/back.jpg");
+	ImageIcon img3 = new ImageIcon("./favorite.png");
 	JButton btn4 = new JButton(img3);
 	
-	public Favorite_Frame(String name) {
-		this.name = name;
+	public Favorite_Frame(Shop shop) {
+		this.shop = shop;
 		
+		setTitle("즐겨찾기 창");
 		
+		setLayout(null);
+		setContentPane(panel);
+
 		
-		btn4.setLayout(null);
+	//	btn4.setLayout(null);
 		btn4.setBounds(30, 30, 50, 40);
 		btn4.setBorderPainted(true);
 		panel.add(btn4);
-		
-		
-		setLayout(null);
-		setLocation(200,200);
-		setSize(480,720);
-		setVisible(false);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		setContentPane(panel);
-		
-		
 		
 	
 		btn4.addActionListener(new ActionListener() {
@@ -47,11 +38,15 @@ public class Favorite_Frame extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
-				shop.f2.setVisible(false);
 				System.out.println("메인으로 이동");
 				shop.f.setVisible(true);
 			}
-		});				
+		});			
+		
+		setLocation(200,200);
+		setSize(480,720);
+		//	setVisible(false);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
 	
