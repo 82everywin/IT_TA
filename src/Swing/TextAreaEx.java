@@ -11,7 +11,7 @@ public class TextAreaEx extends JFrame{
 	
 	public TextAreaEx() {
 		setTitle("텍스트 영역 만들기 예제");
-		setDefaultCloseOperation(J)
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
 }

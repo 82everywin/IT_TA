@@ -4,6 +4,8 @@ public class Circle {
 	private double x,y;
 	private int radius;
 	
+	
+	//생성자 
 	public Circle(double x, double y, int radius) {
 		this.x = x;
 		this.y= y;
