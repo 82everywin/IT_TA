@@ -1,9 +1,10 @@
 package Lv_2;
 
-public abstract class Human  extends Creature implements Talkable{
+public abstract class Human  extends Creature {
 
-	public Human(int x) {
-		super(x);
+	// 기본 능력치와 나이 
+	public Human(String name,int x, int age) {
+		super(name,x,age);
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -12,9 +13,5 @@ public abstract class Human  extends Creature implements Talkable{
 		System.out.println("인간은 도구를 사용하여 공격! ");
 	}
 	
-	public void talk() {
-		
-		System.out.println(" 사람은 말을 할 수 있는 생명체임.");
-	}
 
 }
