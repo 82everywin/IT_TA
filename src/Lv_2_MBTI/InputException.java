@@ -2,11 +2,14 @@ package Lv_2_MBTI;
 
 import java.util.InputMismatchException;
 
-public class InputException extends Exception {
+public class InputException extends InputMismatchException {
 	String message; 
 	
-	public InputException(String msg) {
-		message = msg;
+	
+	
+	public InputException(String message) {
+		super(message);
+		this.message = message;
 	}
 	
 	public String getMessage() {

@@ -1,5 +1,7 @@
 package Lv_2_MBTI;
 
+import java.util.InputMismatchException;
+
 public class MainTest {
 
 	
@@ -12,7 +14,7 @@ public class MainTest {
 			mbti.starttest();
 			mbti.result();
 		}catch (InputException e) {
-			System.out.println(e.getMessage());
+		System.out.println(e.getMessage());
 		}
 	}
 }
