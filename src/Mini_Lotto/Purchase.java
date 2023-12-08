@@ -29,7 +29,7 @@ public class Purchase {
 			
 			String answer = "";
 			
-			for(;;) {
+			while(true)  {
 				System.out.print("\n입력 : ");			
 				answer = sc.next();
 				
@@ -61,7 +61,7 @@ public class Purchase {
 			String num6 = "";
 			
 			// 1의 자리 숫자가 아니면 무한 반복
-			for(;;) {
+			while(true)  {
 				System.out.print("첫번째 번호 입력 : ");
 				num1 = sc.next();
 				if(num1.length() != 1) {
@@ -71,7 +71,7 @@ public class Purchase {
 				}
 			}
 			
-			for(;;) {
+			while(true)  {
 				System.out.print("두번째 번호 입력 : ");
 				num2 = sc.next();
 				if(num2.length() != 1) {
@@ -81,7 +81,7 @@ public class Purchase {
 				}			
 			}
 			
-			for(;;) {
+			while(true) {
 				System.out.print("세번째 번호 입력 : ");
 				num3 = sc.next();
 				if(num3.length() != 1) {
@@ -91,7 +91,7 @@ public class Purchase {
 				}			
 			}
 
-			for(;;) {
+			while(true)  {
 				System.out.print("네번째 번호 입력 : ");
 				num4 = sc.next();
 				if(num4.length() != 1) {
@@ -101,7 +101,7 @@ public class Purchase {
 				}			
 			}
 			
-			for(;;) {
+			while(true)  {
 				System.out.print("네번째 번호 입력 : ");
 				num5 = sc.next();
 				if(num5.length() != 1) {
@@ -111,7 +111,7 @@ public class Purchase {
 				}			
 			}
 			
-			for(;;) {
+			while(true) {
 				System.out.print("여섯번째 번호 입력 : ");
 				num6 = sc.next();
 				if(num6.length() != 1) {
@@ -132,7 +132,7 @@ public class Purchase {
 			
 			String answer = "";
 			
-			for(;;) {
+			while(true) {
 				System.out.print("\n입력 : ");			
 				answer = sc.next();
 				

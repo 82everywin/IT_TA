@@ -80,7 +80,7 @@ public class Membership {
 			Calendar cal = Calendar.getInstance();
 			int yy = cal.get(Calendar.YEAR);
 			
-			for(;;) {
+			while(true) {
 				
 				System.out.print("* 태어난 연도 : ");		
 				this.personalYY = sc.next();
@@ -102,7 +102,7 @@ public class Membership {
 				
 			}
 			
-			for(;;) {
+			while(true) {
 				
 				System.out.print("* 태어난 월 : ");
 				this.personalMM = sc.next();
@@ -122,7 +122,7 @@ public class Membership {
 			cal.set(Calendar.DAY_OF_MONTH, personalMMnum);
 			int day_count = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
 			
-			for(;;) {
+			while(true){
 				
 				System.out.print("* 태어난 일 : ");
 				this.personalDD = sc.next();
